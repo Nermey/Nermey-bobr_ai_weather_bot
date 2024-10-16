@@ -1,0 +1,10 @@
+Создание .env файла
+    содержание файла:
+    BOT_TOKEN=токен бота
+    API_KEY=api ключ для Openweathermap
+
+Для создания контейнера
+docker build -t bot .
+
+Запуск контейнера
+docker run --env-file .env bot
